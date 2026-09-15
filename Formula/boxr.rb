@@ -6,21 +6,21 @@ class Boxr < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.13/boxr-macos-arm64.tar.gz"
-      sha256 "107a2ae3da453f11685a4479523c6c1dfcf98ff701ab6ce9bbd64aa98d877589"
+      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.15/boxr-macos-arm64.tar.gz"
+      sha256 "3dee59c969bf7ae6709fa298327b734c040fb67a693550a26b46d29c659f9873"
     else
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.13/boxr-macos-x86_64.tar.gz"
-      sha256 "a6ec69c4c762c24fae55473b7aab50de2d1f2d9f5f6f6f5dbb1ed47d9e0d43fe"
+      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.15/boxr-macos-x86_64.tar.gz"
+      sha256 "6f64fb378b6dba2048914a17320cf6329e4a5d3a71d3c5a70774fbb80a321e2a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.13/boxr-linux-arm64.tar.gz"
-      sha256 "a511e96de4e6775dba6c757b57a307d72653305662e34004cce755ba2c147abb"
+      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.15/boxr-linux-arm64.tar.gz"
+      sha256 "75420b7639c977b3840086e7ddbf10e706c573857fd2ce0f541ffc7390e477df"
     else
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.13/boxr-linux-x86_64.tar.gz"
-      sha256 "a744500937c963364a61bcf21bef1100d929822f06ae1d375a4d77f1e25d2f1f"
+      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.15/boxr-linux-x86_64.tar.gz"
+      sha256 "e32761068126fd7b131a3a287255a1830dbe7fe9c666585b13b9b5492abc34fc"
     end
   end
 
