@@ -72,15 +72,22 @@ brew services list
 brew services stop boxr
 ```
 
-#### 4. Enable Docker CLI Drop-in Wrapper
-To transparently replace Docker CLI with Boxr:
-```bash
-boxr alias --install
+#### 4. (Optional) Enable Docker CLI Drop-in Alias
+If you want existing scripts or commands using `docker` to transparently invoke `boxr`, you can optionally configure an alias:
 
-# Now run standard docker commands directly:
-docker run --rm hello-world
-docker ps
-```
+- **Via Boxr wrapper:**
+  ```bash
+  boxr alias --install
+  ```
+- **Via Shell profile (`~/.zshrc` or `~/.bashrc`):**
+  ```bash
+  alias docker="boxr"
+  ```
+- **Via Windows PowerShell:**
+  ```powershell
+  Set-Alias -Name docker -Value boxr
+  ```
+*If you already use Docker Desktop alongside Boxr or prefer explicit commands, you can skip this step and use `boxr` directly.*
 
 ---
 
