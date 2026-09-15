@@ -102,8 +102,23 @@ sudo dnf install https://github.com/kchaitanya863/homebrew-tap/releases/latest/d
 ```
 
 ### 3. Windows (Chocolatey)
+
+Download the [boxr.0.1.18.nupkg](https://github.com/kchaitanya863/homebrew-tap/releases/latest/download/boxr.0.1.18.nupkg) package from the release assets, then install locally:
+
 ```powershell
-choco install boxr
+# Direct Chocolatey manual package install:
+choco install boxr -s .
+
+# Or install directly from the GitHub release artifact URL:
+choco install boxr -s "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.18/boxr.0.1.18.nupkg"
+```
+
+Or extract the precompiled Windows `.zip` binary package:
+
+```powershell
+Invoke-WebRequest -Uri https://github.com/kchaitanya863/homebrew-tap/releases/latest/download/boxr-windows-x86_64.zip -OutFile boxr.zip
+Expand-Archive boxr.zip -DestinationPath C:\ProgramData\boxr
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\ProgramData\boxr\bin", "Machine")
 ```
 
 ---
