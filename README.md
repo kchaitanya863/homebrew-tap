@@ -84,14 +84,36 @@ docker ps
 
 ---
 
-## Multi-Platform Ecosystem Roadmap
+## Multi-Platform Package Distribution
 
-We are expanding multi-platform package distribution across major ecosystem package managers:
+In addition to Homebrew, precompiled packages are generated and published automatically on every release:
 
-- [x] **Homebrew** (macOS & Linux): Precompiled universal binaries and automated release formulas.
-- [ ] **APT / PPA** (Debian, Ubuntu): Native `.deb` packages and repository hosting for `apt-get install boxr`.
-- [ ] **Chocolatey / Winget** (Windows): Package manifests for Windows container tooling (`choco install boxr`).
-- [ ] **RPM / Copr** (Fedora, RHEL, Rocky Linux): Native `.rpm` packages for Red Hat ecosystems.
+### 1. Debian & Ubuntu (`.deb`)
+```bash
+# Download and install via dpkg or apt:
+curl -fsSLO https://github.com/kchaitanya863/homebrew-tap/releases/latest/download/boxr_0.1.18_amd64.deb
+sudo dpkg -i boxr_*_amd64.deb
+```
+
+### 2. Fedora, RHEL & Rocky Linux (`.rpm` / YUM / DNF)
+```bash
+# Install directly via DNF:
+sudo dnf install https://github.com/kchaitanya863/homebrew-tap/releases/latest/download/boxr-0.1.18-1.x86_64.rpm
+```
+
+### 3. Windows (Chocolatey)
+```powershell
+choco install boxr
+```
+
+---
+
+## Multi-Platform Ecosystem Status
+
+- [x] **Homebrew** (macOS & Linux): Precompiled universal binaries and automated release formulas (`brew install boxr`).
+- [x] **Debian / Ubuntu (`.deb`)**: Native `.deb` packages with bash, zsh, and fish completions.
+- [x] **Fedora / RHEL / CentOS (`.rpm`)**: Native `.rpm` packages for YUM/DNF package managers.
+- [x] **Windows (Chocolatey / Zip)**: Chocolatey packages (`boxr.nupkg`) and standalone zip distributions.
 
 ---
 
