@@ -5,21 +5,15 @@ class Boxr < Formula
   head "https://github.com/kchaitanya863/kc-docker.git", branch: "main"
 
   on_macos do
-    if Hardware::CPU.arm?
+    on_arm do
       url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.26/boxr-macos-arm64.tar.gz"
-      sha256 "152bbda1bd488dbcbc2bb3af910016ed7afb2396e275836bb615ed8e0bd97235"
-    else
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.26/boxr-macos-x86_64.tar.gz"
       sha256 "152bbda1bd488dbcbc2bb3af910016ed7afb2396e275836bb615ed8e0bd97235"
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm?
+    on_arm do
       url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.26/boxr-linux-arm64.tar.gz"
-      sha256 "4f6ec8d073e1979b2768f2ce683898f0113f7ab65adec15cd3c27b4159f7c192"
-    else
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.26/boxr-linux-x86_64.tar.gz"
       sha256 "4f6ec8d073e1979b2768f2ce683898f0113f7ab65adec15cd3c27b4159f7c192"
     end
   end
