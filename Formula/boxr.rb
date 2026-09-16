@@ -6,15 +6,15 @@ class Boxr < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.26/boxr-macos-arm64.tar.gz"
-      sha256 "152bbda1bd488dbcbc2bb3af910016ed7afb2396e275836bb615ed8e0bd97235"
+      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.27/boxr-macos-arm64.tar.gz"
+      sha256 "71f515ca9f06c37420f1a636c46cb2d301778cafbb42cbd295afca58e93e8abe"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.26/boxr-linux-arm64.tar.gz"
-      sha256 "4f6ec8d073e1979b2768f2ce683898f0113f7ab65adec15cd3c27b4159f7c192"
+      url "https://github.com/kchaitanya863/homebrew-tap/releases/download/v0.1.27/boxr-linux-arm64.tar.gz"
+      sha256 "0237b11e797c572d31d380b3fa94813eb080e389336ec9712438d3c69de08158"
     end
   end
 
