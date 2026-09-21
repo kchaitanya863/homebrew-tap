@@ -1,8 +1,8 @@
 class Boxr < Formula
   desc "Fast, lightweight OCI container engine and runtime written in Rust"
   homepage "https://github.com/kchaitanya863/homebrew-tap"
-  license "Apache-2.0"
-  head "https://github.com/kchaitanya863/kc-docker.git", branch: "main"
+  license "MIT"
+  head "https://github.com/kchaitanya863/boxr.git", branch: "main"
 
   on_macos do
     on_arm do
