@@ -1,6 +1,6 @@
 # Homebrew Tap for Boxr
 
-Official Homebrew tap for [Boxr](https://github.com/kchaitanya863/kc-docker) and developer tools maintained by [@kchaitanya863](https://github.com/kchaitanya863).
+Official Homebrew tap for [Boxr](https://github.com/kchaitanya863/boxr) and developer tools maintained by [@kchaitanya863](https://github.com/kchaitanya863).
 
 ## Installation
 
@@ -68,8 +68,8 @@ alias docker="boxr"
 
 ## Other Platforms
 
-For precompiled `.deb` (Debian/Ubuntu), `.rpm` (Fedora/RHEL), or Windows binaries, refer to the [GitHub Releases](https://github.com/kchaitanya863/homebrew-tap/releases) page or the source repository at [kchaitanya863/kc-docker](https://github.com/kchaitanya863/kc-docker).
+For precompiled `.deb` (Debian/Ubuntu), `.rpm` (Fedora/RHEL), or Windows binaries, refer to the [GitHub Releases](https://github.com/kchaitanya863/homebrew-tap/releases) page or the source repository at [kchaitanya863/boxr](https://github.com/kchaitanya863/boxr).
 
 ## License
 
-This tap and its formulae are licensed under the [Apache-2.0 License](LICENSE).
+This tap and its formulae are licensed under the [MIT License](LICENSE).
